@@ -9,5 +9,8 @@
   "bin": {
     "taco": "cli.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.16.2",
+    "yargs": "^8.0.2"
+  }
 }

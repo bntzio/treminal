@@ -1,8 +1,5 @@
 const axios = require('axios')
-
-const user = 'YOUR TRELLO USER' // ex: Taco
-const key = 'YOUR TRELLO KEY' // https://trello.com/app-key
-const token = 'YOUR TRELLO TOKEN' // https://trello.com/app-key
+import { user, key, token } from './credentials'
 
 const membersUrl = `https://api.trello.com/1/members`
 const boardsUrl = `https://api.trello.com/1/boards`

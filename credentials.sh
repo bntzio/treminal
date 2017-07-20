@@ -35,19 +35,20 @@ echo ""
 echo -e $BWhite "In order to continue, you must set your Trello API key and token."
 echo -e $BWhite "You can find those in https://trello.com/app-key"
 echo ""
-echo -e $BWhite "What's your key?"
-read key
-echo -e $BWhite "What's your token?"
-read token
+echo -e $BIBlue "What's your Trello username?"$BIPurple
+read user
 echo ""
-echo -e $BWhite "Your key is: $key"
-echo -e $BWhite "Your token is: $token"
+echo -e $BIBlue "What's your key?"$BIPurple
+read key
+echo -e $BIBlue "What's your token?"$BIPurple
+read token
 
 echo ""
 
 echo -e $BIBlue "Generating access file..."
-echo "const key = '$key'" > credentials.js
-echo "const token = '$token'" >> credentials.js
+echo "export const user = '$user'" > credentials.js
+echo "export const key = '$key'" >> credentials.js
+echo "export const token = '$token'" >> credentials.js
 sleep 3
 echo -e $BIGreen "Done!"
 echo ""

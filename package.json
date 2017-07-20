@@ -1,0 +1,13 @@
+{
+  "name": "treminal",
+  "version": "0.1.0",
+  "description": "Display your Trello tasks in the Terminal",
+  "main": "index.js",
+  "repository": "https://github.com/bntzio/treminal.git",
+  "author": "Enrique Benitez <hello@bntz.io>",
+  "license": "MIT",
+  "bin": {
+    "taco": "cli.js"
+  },
+  "dependencies": {}
+}

@@ -7,6 +7,10 @@ const argv = yargs
     type: 'array',
     desc: 'Show list of boards'
   })
+  .option('boards <board>', {
+    type: 'array',
+    desc: 'Show options for a specific board'
+  })
   .help()
   .argv;
 

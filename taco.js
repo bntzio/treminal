@@ -13,7 +13,19 @@ const taco = {
         })
       })
     } else {
-      console.log('Invalid option!')
+      const promise = api.getBoards()
+      promise.then(res => {
+        res.forEach(board => {
+          if (board.name === arg) {
+            const promise = api.getLists(board.id)
+            promise.then(res => {
+              res.forEach(list => {
+                console.log(list.name)
+              })
+            })
+          }
+        })
+      })
     }
   }
 }

@@ -22,7 +22,7 @@ sleep 0.2 && echo "   ╚═╝   ╚═╝  ╚═╝╚══════╝�
 echo ""
 
 sleep 0.1
-echo -e $BWhite   "          Display your$BIRed Trello$BWhite tasks in the$BIRed Terminal     "
+echo -e $BWhite   "                Manage$BIRed Trello$BWhite from the$BIRed Terminal     "
 sleep 0.1
 echo ""
 sleep 0.1
@@ -40,6 +40,7 @@ read user
 echo ""
 echo -e $BIBlue "What's your key?"$BIPurple
 read key
+echo ""
 echo -e $BIBlue "What's your token?"$BIPurple
 read token
 

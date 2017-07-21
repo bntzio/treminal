@@ -6,6 +6,9 @@
   "repository": "https://github.com/bntzio/treminal.git",
   "author": "Enrique Benitez <hello@bntz.io>",
   "license": "MIT",
+  "engines": {
+    "node": ">=5"
+  },
   "bin": {
     "taco": "start.js",
     "maketaco": "credentials.sh"

@@ -7,7 +7,8 @@
   "author": "Enrique Benitez <hello@bntz.io>",
   "license": "MIT",
   "bin": {
-    "taco": "start.js"
+    "taco": "start.js",
+    "maketaco": "credentials.sh"
   },
   "dependencies": {
     "axios": "^0.16.2",

@@ -47,9 +47,11 @@ read token
 echo ""
 
 echo -e $BIBlue "Generating access file..."
-echo "export const user = '$user'" > credentials.js
-echo "export const key = '$key'" >> credentials.js
-echo "export const token = '$token'" >> credentials.js
+NPMRoot="$(npm root -g)"
+CredPath="$NPMRoot/treminal/credentials.js"
+echo "export const user = '$user'" > "$CredPath"
+echo "export const key = '$key'" >> "$CredPath"
+echo "export const token = '$token'" >> "$CredPath"
 sleep 3
 echo -e $BIGreen "Done!"
 echo ""
